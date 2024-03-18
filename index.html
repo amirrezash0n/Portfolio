@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="images/icon-portfolio.png" />
+    <link rel="stylesheet" href="styles/app.css" />
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="nav">
+          <a href="#" class="nav__icon">
+            <span class="portfolio-icon">Portfolio</span>
+          </a>
+          <div class="nav-menu">
+            <ul class="nav-menu__list">
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link nav-menu__link--active"
+                  >About</a
+                >
+              </li>
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">Portfolio</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">Contact</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link nav-menu__link--last-child"
+                  >Get Started</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="hamburger-menu">
+            <div class="hamburger-menu__top"></div>
+            <div class="hamburger-menu__middle"></div>
+            <div class="hamburger-menu__bottom"></div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-mobile">
+        <h2 class="menu-mobile__title">Portfolio</h2>
+        <ul class="menu-mobile__list">
+          <li class="menu-mobile__item">
+            <a href="#" class="menu-mobile__link">About</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a href="#" class="menu-mobile__link">Portfolio</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a href="#" class="menu-mobile__link">Contact</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a href="#" class="menu-mobile__link">Get Started</a>
+          </li>
+        </ul>
+      </div>
+      <img
+        src="images/points-design.jpg"
+        alt="points-design"
+        class="header__points-top"
+      />
+    </header>
+    <main class="main">
+      <section class="home">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6">
+              <div class="home-left">
+                <span class="home-left__transcription">Hello, I am</span>
+                <h1 class="home-left__title">Mark Reccardo</h1>
+                <p class="home-left__description">A young
+                  <span class="home-left__description--style">UI/UX</span>
+                  designer with crazy for mobile & web design.</p>
+                <h5 class="home-left__subtitle">Find Me on</h5>
+                <div class="home-left__icons">
+                  <svg class="home-left__icon" width="56" height="35" viewBox="0 0 56 35">
+                    <image id="behance" width="56" height="35" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAjCAYAAADBl8lGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAADu0lEQVRYw72ZTYhWZRTHf2dmnDEbK1ELs1CHiKkmyqIhog+DPmxhpeEiopAgWpRDi4gIoVxItIo2LZK+IFoIQZDU9GEYpZSEukioFjWWUyI5mQ5qjc6vxZ2hl+ne570zc+/7hxfue5/z/5/n3Oc8H+feUGX2GAWGgSPAfmAQ+DQixirQnhWiogDzcAh4AXgjIkr7UFcBq2fg7+uIeD9PsG68p54zjQCfnaGfV/P02moavUasA15vgZ9cdLTIz4PqttwU+j9OA3/OwMfJvJt1zsGp+CYibmyRr2kFuBw4XtA2F1gMXA7cCWwAOhNaPRHxc0sjLDF5z5+G1s3qWELrgZYGR8VzMCK+Uj8C1hSYXDSNh9UO3ALcDlwNLAXmAOPAH8APwC7gs4gYSQlVNoITei8ltJ4swe9Un1J/Kbk9nFbfUS/L06tjm0hlxdEmwfUC3wIvA5eW9NcFPAR8p27ME616BPcktHoTvH51pOSopbC5tgDVpxM6+xO8FeqRCoKbxMOT2mW2iVVkh+k8tAGLgKuA9UB/Qmdt3kavBrATuDXB/Z1sQRkBzgVuINuaijAK9EbEcCvOoqovJkbv/gTvlPq42pHDu1sdSnC3ThrWiaPqo03SekeCv64J9xJ1uID7t7qw7gA/VK9JdPBC9WwB9wNKQH0k4X9DK1J0TN2ituV0bn2Ct6ZkgN1me2Ee3mxFNdEBPAfMBwamtF2b4B1Se0r6OEj+otNXJsC3gH8S7V1AD3A9MC9ht1H9JCK2N9xblrDfWzK4FC6ubB+cSJXn1TMJrb1TONtrnh7HKjuqRcRoRGwGnkmYrVSvaPh/XlX+C9Bdx1n0NQqq6wk0Fr2j1Iv2yheZiBhVh4ArC0wa513RgxgG7quiP3Wtou2Jtq6G64MFNouBfRExPtuOVJ6iZoXq0oRJ46gdKLDpBFZW0Z86RvBeoDvRPtRwvSth9wSQPOYBqAvIDvp5+L7qcmm5+msTveVTOAcK7MbVtU38hfp2wtdAmQCXqQsKfkvUPnW1+or6VxOt3TmdfCxhf0bdpM7L4S1sEtxJdVEr34sC3BMRg1M6Oofs1NKX4J0AvuS/RWkFcBuQ+iSwKSK2tKoeVH03kWp96rEKfQ2aLXYt+fiiuk+d32Q+9auHK/C128Z1owXB7VQvKJO/6iJ12wz9jKtb1blTRevCYXXAyVSZBtQ71I8tLoYbcdassL4pT6uKReY4cIrsbfOPZG+cvwB2zPYLr7oEuAu4jqwkmxydE8BPZF+TP4+I34o0/gUNpl72OV15sgAAAABJRU5ErkJggg=="/>
+                  </svg>
+                  <svg class="home-left__icon" width="40" height="40" viewBox="0 0 40 40">
+                    <image id="dribbble" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAAEz0lEQVRYw8WZXYiWRRTH/7O7ta4a5mKrmWUYpERli1YL6lZEVEYXhQuVLd0EsdZNV0FQiReBpYiRC6ElLIi2XYR9GISSBn2Zra4pa3rRd7pautrabvv162LmzfPOPu8+z/Ou0YEX3nfOOf/5z5yZM2fmdSpDgEpJiyTdKWmBpOsl1UmqDSanJZ2UdFTSN5J2S/rMOTdcTn95iM0B1gLd5Jfu4DvnvyA2HdgIDKaQOAecBobHsBkMWNMvFrnHQ6el5GnguhD2go8DZgL3ACuBjgS/M0DzeIhVA29GoCPAp1HbJ5bcGHjzgbaE2X0LqM5LbiKwMwLaDzQE/cZI90IO7PqEGd0JTMwKUAlsjwDW2lECk4Aj0bpakINkFbAu6mN7lkgIaDVOQ8CKEna3B31BDuUJFXAFcCoi2ZrmtCxyaEmxXx3Zr8pIbgrwZfKeo6mUU100ojUZOqoGjhqffmBuis81wLfG5xjwmvl9CqhLcnzdGO0DLsk4G0ujGdiVYnvC2P4AzA7r/gvTviF2nBVGDz4NLMxCzvi/G5F8KGHWtkU2+4FZxuZms6b7rU7Aq8axPQ85Q+B8FLZLgWuB9WbwBdkGTE7AaTM26wqNDvjJKBbnJRhwno9IdFK8ywGOAw+PgXGLsT0JVApYZBq7yiBWAywBXsSfNEnSh8+lUzPg2Q3UWCXpbqPfkeI8Q9INkuZJulHSfPlyq1T++1PSG5LWO+d+yTjmnQFbku5ywHuSHgwN70s6ImmKpApJUyVNk6/1ZkvKdhxdkBOS5jjn+nJEZKmkD//lgz8BxiNDwNf4pH0f8FikfyrPiPAZpSBHHHBc0oyM/t2Sjkk6JOmgpMOSOp1zZ00HTlKnpJtC01FJ85xzZCToJA1KqpR02gF9kiZI6pe0UtJ5SQOSesPnd/ny/desocLXeW2maZ/8cqmNTM9JOivpN0k/h8EflvS2pMmSRhR2GEBPnlCUILY45LKecS6bggxXSeoJIb4MqHDOjZRB7DZJL6s4I8Tyh6TvQ3+98ju/RtKV8htwQoJPT7xJrs5J7HJ8eZZ0BzlF8R2mZQycSmAu0EzxkdgloN003J+D3CP4kyGWA8Cj+ErnI9O+OyPuvcanvUJSh9EvyQAwAdgkaauKd/93kpok1Tvntjrn/pa0xWIDMzNwvMN878h11AG1jC40e4BngKoE+0lAb5YwG58uY98ooILiYqGhhGMdvkSysgO4KqVDu4Q+SLFtMLa+WAiKNUbxToLjFOCg3f744sBlmJHlxu8vYFLGwayzCluwjgC3Gl1ltNiHgOVpxKJlMZC2EYGFXKiGigvWYLDBgHQQSn7guYjcsqzkDPYeg7E6QV8F7DU2rUkgoy5N+NzUZ9pWZGI0Gvslg/FVgv4Vo0++NAXDpmgT/Gi+b0llUppgo8EZBGqMriXqsykNrJXRcgaYNg6C1VEkCk8oT1J8LWjNApb09PExCXkuJ0mbP58NYbVXhGxPHwFsIrArIrkXqB8HQXvvHoiwd5H18SgKy+YIaBjYUg5RfN5Mks3kfX6LgJvDGozlALAKf7jPxCRt/FV2NvAA/s7dleB/BniibGIRyRn4x8yxnoAH8S+xY73GFuw24W+IF1f4Hx7RU8/SEkTL+Rvic+fcUN6+/gGvU+bwVlTRLwAAAABJRU5ErkJggg=="/>
+                  </svg>
+                  <svg class="home-left__icon" width="40" height="40" viewBox="0 0 40 40">
+                    <image id="insta" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAADq0lEQVRYw8WZT2zURRTHP6+BFiSNZUlI0C5IqECwAU4oNKKLiQY5YEICJ8LBgx7gBF405UgPhCMXveiJPwJhScReoEQEDgRJJCRCaYjQgCT86S4HbA9+PexsmA6/7c4su+077bx5b95n38z+5u37GTVEUhewHdgCvAt0A500R54Do8Aw8Atw3MzGojwldUjql1TS9EnJxeyoB5eXdHUawUK5JinvM5kH1w1cAhYH3OPAReAu8LRJW5wDlgIfAmHW7gF9ZjYabuu14NuUJX0jqVnnLmvHOl2MckYmO3zD/sDgrqTeVoFlgPa6mL70Vyff1OQfRFnS8hYDzZO0yU+CpOVBJkuSupC0MyD/bhqyNepi/SfpoDf3bcDyFZKOe4p/W3nmHEQx49fb6+Y6HUNVim3Aas//dzN73kDQdklrJH0q6WNJKyXNrmHenaHLA7jYFz39GoLz930i2HpJRySNZWRlzM2tD3wOBHbPJM335n/wd5TAeCASLCfppOLlpKScl+0BSTckDUl6P1h7wHdMBpTUI+lOAlxVhiUti1h/EuCsxC3NAb8CYaAhoAiMuPEyYCtQ8Gx6gEFJH5jZk5Sg0RmU9HNgPyqpMIV9QS8fKVUppmQwGlDShsD2noKLvYZfXtLfge+mWMC26FTD3mC8y8zu13NyNrsC9e7YoFGAqlzcmz3VkJkNxQYxswvAOU/1merVfimAwApgrjcuRvr5ctr7/AawspmAbwXjmw0A3qqz5msBzpjEAj4Ixu81EGtFnTVfC/AW8MIbb20A8Avv8wvgr6YBmtk4MOipCpI+iiVztp94qkG3ZnMAnRwKxj/FPqiBHwP14dig0YBmdgk44amWAFfqXXXAFeAdT33GzM4RKUnFAvA1sJbKxQ/wNnBeUrVYuOP0PbxaLODmv0wJmARoZk8kbQHOMrmiKWTAhDICfG5mj1NiJj8Hzew2sA44leB2ClhnZsOp8dqodA6qsiAS8qmZbQP6gKNAKcOs5Ob6zGybmcV2JXyG8VnAI162O5YmZvMycFlSO7AKWAhMuDVHzGwiNWMBwz9IOuGVXy3/2zmVqMbfzjOeTQcJtVoLZA+Tm0lnZ6T1USN7YeujrEoTtWbzqJGCoFG4rObRft+gVvttXyvPpDtz+/Rq++2PasUd28D8jUoD81mT2HJUrr+NxDQwPci8pOuaObletwBx270/I+2tlLKLOSfksSlAu4AdVF5DrAYWAe1N2uIJ4CHwJ5XXEMdqvYb4H0bZKaBuZ/DdAAAAAElFTkSuQmCC"/>
+                  </svg>
+                  <svg class="home-left__icon" width="42" height="40" viewBox="0 0 42 40">
+                    <image id="linked_in" data-name="linked in" width="42" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAoCAYAAACIC2hQAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAABw0lEQVRYw+2YPWsVURCGn7l6G40KKcSgFn40gYggggQDQexs/A02klZREDFCEDSVpf4JS0kRi4iFaGMRUEHUUozYmJD4SR6L68cleN1zXXdPxH3L2XfmPMw5zMACoLbUCfWBuqx+VJ+ok+oA60FqW52xtx6p23Jzop61WDdzc6LOJ4Auqe2cnC1gf4JvANieG/Rtgm8VWMwNOpPguxcRSzlBUYfUV795n8vqoayQXbB71dlfQD5UD+fmA4g1wDuBA9/izyLiRW7ARlUpypfoT+owcAzYR2c+rwALwDwwFxHveyVeSNhM18rmqePq/QL/onpdHVx7XqumLl4G5oDRAusW4AzwWD1aK6h6Dpiiv2e2A5hVj3wPbKyYcxQY+8PcTcAtdSQi3pXp6OcEzziwocQZu4CLUO7qV0rk9qMJdXPVV9+t58Bt4DWdTp0EdifkbQVO1AEqcAmYjojVH0E9D9wATiXUOF7HeJqOiKvdkAAR8QE4DTxNqHGwatA3wJVeHyPiC52uFmlP1aB3eq7En7qbUGewatCFBM/LBE+7atBPRYaISBpztez6v6EGdD2B1vo/6r/oaAPagDagDWgD+g+BfgUQb5qP6hHGCwAAAABJRU5ErkJggg=="/>
+                  </svg>
+                  <svg class="home-left__icon" width="40" height="40" viewBox="0 0 40 40">
+                    <image id="pinterest" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAAE6klEQVRYw7WZW4jXRRTHv/NTy2ztv94eZG3VyNwuBrXLaqBm+lCBCFIq5Uv1UBFdXnqwh16CNMmC1iyrtwgiumFXpPDSxTQXkS0sta3clM3AVVzFtd389PCbf549zv8qHfjDmTnnfM+ZM/ObOTP/oDoIyCS1SVooqVXSNZKmSLo8qpyWdFjSQUmdkrZK2h1COFePv1oCawKeBQ5ROx2Ktk3/R2ATgfXAQB2BeRqIWBOr8R2qCO5uSRslTUiIf5a0TdIPkn6T1B/7x0qaLmmWpFslXZuwPSbp4RDCe/VmbQTQkcjACeA5oKUGrJZocyKBtx4YWWtwlwGbHNAg8AJQqGvEOW4BWBexLH0MjKklcz64X4G2egNL+GgDup2PTcAIrxsSxi9Jetx0fSNpSQjheAlnjZLmSGqSNDl2H4m/nSGEkyXsxkn6SNJc090RQnii3MiWuVHtSKUeCMBSYDMwVOaL/Rv4DFgMpJIxBvjW2SwrFdwE4C+j2J1ab3HBf1fH9rIDmJ7AK7jpPgZMSgX4svsgWhM6K4D+hPNBoCtm9IvIDyb0jgNLEritTv9Vr9Acp6NI6xIgK4FzzuGuuCwaSmTmHmCPsxkC7kror3NLo9kKV7tRFpxxG3DW6JwGHlAVRL5eHwXOOPsWp1cA+ozO6qIgA3qMYI0zzIC9DnxONcE5nIVukJsTOjZRPUAmoN1NgR/ZcidfWWtwBut+h3WHk7c4ebuAVabjpwTo50a+rYTjBmAWia0kobvL4L2fkO8z8lWZ8nquSNud8ihJt5mu9QnARkn7JHVJeqOKRNovdFFiUF8ZvjWTZKe0yynPkHSpaW9NOFws6crI31lFgBajIGmqk9sYWjKdP54kqccpjzf8QAihL+FwgeH3VBHgEddudG0bw+RMee1WpBNO+YzhR8cp97SoRHZK0XjXHnJtG8PYrALYYde+3jaAaZKmma4tVQQ4w7UPlVPOlF9wijRsgw4hHJXUbbr8CWA/oGO6cA2naKnhfwwh9Dt5o+H7Mw1fE1MTgB8Y/hGG3yUWGn57pVsbMFnSgyWwi9Rs+N5M0gHTMSth8IqkwciPl/SUkS0wfNnpBS6R9JbOr/mTGr7lFOlGw+/PJO02HfO8dgjhd0kdpqshOpyp/C5cpG1lgmuQ9LbL+DMhhD8T6vMN3yngFne8zEyNnvxOuzFOk4CHjE1vmeAWAfudj62pHSFx1M0uFgN/lCoWyjh+x9h0AbcDN8WzfUk8+Lu4kHZR4uKVLBaiYK0RHAeuqBBcAI5SO70GjC6BWSBVbkXhFIaXQmsrBHhDjYHtxVUuCcznjf7wgjUqbDAKZ0mU/Eb3MZfx3cCp2B4CeoHvgReBuapAXFjyb0wpTXIp3l9mrXxo9N40/aP+WzdVUpzaXwxe+tIUlVe4qfkSVw6Rf1R2IPfVEpDDGgN87Xwur2S0wRlc7eQ3O3mz6iBgXCK4jmoMRwCfRoNO3H4FPGkAuysCpn20AQdccMmnj1IAAZhJejP9xIC+XmNghfi11v94VMHBSOCkAb63Sru6n98qXnKco9mSdpqug8oflzol9Urqk/SP8vP6KuXFx3xJ1yXg+pQ/YL570ZkzAc7j4mmA/JmlqifgWgMMwNMMP7urpR5gDTU+otc0xSbQTFK78nqwXXkZ36S81kPSKeXXhQO6yL8h/gX2O1xLpH3w6gAAAABJRU5ErkJggg=="/>
+                  </svg>
+                </div>
+                <div class="home-left__links">
+                  <a href="#" class="home-left__link home-left__link--active btn">Hire Me</a>
+                  <a href="#" class="home-left__link btn">Portfolio</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="home-right"></div>
+            </div>
+          </div>
+          <ul class="home-slider__menu">
+            <li class="home-slider__item">
+              <a href="#" class="home-slider__link home-slider__link--active">01</a>
+            </li>
+            <li class="home-slider__item">
+              <a href="#" class="home-slider__link">02</a>
+            </li>
+            <li class="home-slider__item">
+              <a href="#" class="home-slider__link">03</a>
+            </li>
+            <li class="home-slider__item">
+              <a href="#" class="home-slider__link">04</a>
+            </li>
+          </ul>
+          <img src="images/points-design-2.jpg" alt="points-design-2" class="home__points"/>
+          <div class="home__circle"></div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6">
+              <div class="about__left">
+                <h3 class="about__left-title section-head__title">About Me</h3>
+                <p class="about__left-caption">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                  <br>
+                  <br>
+                  <br>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <a href="#" class="about__left-btn btn">Download CV</a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="about__cover">
+                <img src="images/coffee-man.jpg" alt="coffee-man" class="about__cover-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio">
+        <div class="container">
+          <h3 class="portfolio__title">Portfolio</h3>
+          <ul class="portfoilio-list">
+            <li class="portfolio-list__link portfolio-list__link--active" data-content-id="#all">All</li>
+            <li class="portfolio-list__link" data-content-id="#logo">Logo</li>
+            <li  class="portfolio-list__link" data-content-id="#websites">Websites</li>
+            <li class="portfolio-list__link" data-content-id="#mobile-apps">Mobile Apps</li>
+          </ul>
+          <div class="portfolio-content portfolio-content--show" id="all">
+             <div class="swiper">
+                <div class="swiper-wrapper">
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-1.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-2.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-3.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-4.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-5.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-6.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-1.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-2.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-3.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-4.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-5.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-6.jpg" alt="portfolio">
+                 </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+          </div>
+          <div class="portfolio-content" id="logo">
+             <div class="swiper">
+                <div class="swiper-wrapper">
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-1.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-2.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-3.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                   <img class="portfolio-content__img" src="images/portfolio-4.jpg" alt="portfolio">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="portfolio-content__img" src="images/portfolio-5.jpg" alt="portfolio">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="portfolio-content__img" src="images/portfolio-6.jpg" alt="portfolio">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="portfolio-content__img" src="images/portfolio-1.jpg" alt="portfolio">
+                  </div>
+                  <div class="swiper-slide">
+                   <img class="portfolio-content__img" src="images/portfolio-1.jpg" alt="portfolio">
+                  </div>
+                  <div class="swiper-slide">
+                   <img class="portfolio-content__img" src="images/portfolio-2.jpg" alt="portfolio">
+                  </div>
+                  <div class="swiper-slide">
+                   <img class="portfolio-content__img" src="images/portfolio-3.jpg" alt="portfolio">
+                  </div>
+                  <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-2.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-3.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-3.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-4.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-5.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-6.jpg" alt="portfolio">
+                 </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+          </div>
+          <div class="portfolio-content" id="websites">
+             <div class="swiper">
+                <div class="swiper-wrapper">
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-1.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-2.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-3.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-4.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-5.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-6.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-1.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-2.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-3.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-4.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-5.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-6.jpg" alt="portfolio">
+                 </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+          </div>
+          <div class="portfolio-content" id="mobile-apps">
+             <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                   <img class="portfolio-content__img" src="images/portfolio-2.jpg" alt="portfolio">
+                  </div>
+                  <div class="swiper-slide">
+                   <img class="portfolio-content__img" src="images/portfolio-2.jpg" alt="portfolio">
+                  </div>
+                  <div class="swiper-slide">
+                   <img class="portfolio-content__img" src="images/portfolio-3.jpg" alt="portfolio">
+                  </div>
+                  <div class="swiper-slide">
+                   <img class="portfolio-content__img" src="images/portfolio-4.jpg" alt="portfolio">
+                  </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-1.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-2.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-3.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-4.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-5.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-6.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-1.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-2.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-3.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-4.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-5.jpg" alt="portfolio">
+                 </div>
+                 <div class="swiper-slide">
+                  <img class="portfolio-content__img" src="images/portfolio-6.jpg" alt="portfolio">
+                 </div>
+                </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="capability">
+        <div class="container">
+          <h3 class="capability__title">My Capabilities</h3>
+          <p class="capability__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et t enim ad minim veniam, quis nostrud exercitation.</p>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="capability-box">
+                <svg class="capability-box__svg" width="106" height="106.185" viewBox="0 0 106 106.185">
+                  <g id="Group_66" data-name="Group 66" transform="translate(-321.317 -463.976)">
+                    <path id="Path_56" data-name="Path 56" d="M427.317,494.076l-53.005,30.275-52.995-30.275,52.995-30.1Zm0,0" transform="translate(0)" fill="#ffe01a"/>
+                    <path id="Path_57" data-name="Path 57" d="M374.312,498.748l-32.885-18.8-20.11,11.415,52.995,30.285,53.005-30.285L407.21,479.953Zm0,0" transform="translate(0 25.603)" fill="#ff6f00"/>
+                    <path id="Path_58" data-name="Path 58" d="M374.312,507.551l-32.885-18.8-20.11,11.417,52.995,30.285,53.005-30.285L407.21,488.753Zm0,0" transform="translate(0 39.705)" fill="#ff0513"/>
+                  </g>
+                </svg>                
+                <h5 class="capability-box__title">Web Design</h5>
+                <p class="capability-box__caption">Get awesome design services from inkyy.com</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="capability-box">
+                <svg class="capability-box__svg" width="106" height="106.185" viewBox="0 0 106 106.185">
+                  <g id="Group_66" data-name="Group 66" transform="translate(-321.317 -463.976)">
+                    <path id="Path_56" data-name="Path 56" d="M427.317,494.076l-53.005,30.275-52.995-30.275,52.995-30.1Zm0,0" transform="translate(0)" fill="#ffe01a"/>
+                    <path id="Path_57" data-name="Path 57" d="M374.312,498.748l-32.885-18.8-20.11,11.415,52.995,30.285,53.005-30.285L407.21,479.953Zm0,0" transform="translate(0 25.603)" fill="#ff6f00"/>
+                    <path id="Path_58" data-name="Path 58" d="M374.312,507.551l-32.885-18.8-20.11,11.417,52.995,30.285,53.005-30.285L407.21,488.753Zm0,0" transform="translate(0 39.705)" fill="#ff0513"/>
+                  </g>
+                </svg>                
+                <h5 class="capability-box__title">Web Design</h5>
+                <p class="capability-box__caption">Get awesome design services from inkyy.com</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="capability-box">
+                <svg class="capability-box__svg" width="106" height="106.185" viewBox="0 0 106 106.185">
+                  <g id="Group_66" data-name="Group 66" transform="translate(-321.317 -463.976)">
+                    <path id="Path_56" data-name="Path 56" d="M427.317,494.076l-53.005,30.275-52.995-30.275,52.995-30.1Zm0,0" transform="translate(0)" fill="#ffe01a"/>
+                    <path id="Path_57" data-name="Path 57" d="M374.312,498.748l-32.885-18.8-20.11,11.415,52.995,30.285,53.005-30.285L407.21,479.953Zm0,0" transform="translate(0 25.603)" fill="#ff6f00"/>
+                    <path id="Path_58" data-name="Path 58" d="M374.312,507.551l-32.885-18.8-20.11,11.417,52.995,30.285,53.005-30.285L407.21,488.753Zm0,0" transform="translate(0 39.705)" fill="#ff0513"/>
+                  </g>
+                </svg>                
+                <h5 class="capability-box__title">Web Design</h5>
+                <p class="capability-box__caption">Get awesome design services from inkyy.com</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="capability-box">
+                <svg class="capability-box__svg" width="106" height="106.185" viewBox="0 0 106 106.185">
+                  <g id="Group_66" data-name="Group 66" transform="translate(-321.317 -463.976)">
+                    <path id="Path_56" data-name="Path 56" d="M427.317,494.076l-53.005,30.275-52.995-30.275,52.995-30.1Zm0,0" transform="translate(0)" fill="#ffe01a"/>
+                    <path id="Path_57" data-name="Path 57" d="M374.312,498.748l-32.885-18.8-20.11,11.415,52.995,30.285,53.005-30.285L407.21,479.953Zm0,0" transform="translate(0 25.603)" fill="#ff6f00"/>
+                    <path id="Path_58" data-name="Path 58" d="M374.312,507.551l-32.885-18.8-20.11,11.417,52.995,30.285,53.005-30.285L407.21,488.753Zm0,0" transform="translate(0 39.705)" fill="#ff0513"/>
+                  </g>
+                </svg>                
+                <h5 class="capability-box__title">Web Design</h5>
+                <p class="capability-box__caption">Get awesome design services from inkyy.com</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="capability-box">
+                <svg class="capability-box__svg" width="106" height="106.185" viewBox="0 0 106 106.185">
+                  <g id="Group_66" data-name="Group 66" transform="translate(-321.317 -463.976)">
+                    <path id="Path_56" data-name="Path 56" d="M427.317,494.076l-53.005,30.275-52.995-30.275,52.995-30.1Zm0,0" transform="translate(0)" fill="#ffe01a"/>
+                    <path id="Path_57" data-name="Path 57" d="M374.312,498.748l-32.885-18.8-20.11,11.415,52.995,30.285,53.005-30.285L407.21,479.953Zm0,0" transform="translate(0 25.603)" fill="#ff6f00"/>
+                    <path id="Path_58" data-name="Path 58" d="M374.312,507.551l-32.885-18.8-20.11,11.417,52.995,30.285,53.005-30.285L407.21,488.753Zm0,0" transform="translate(0 39.705)" fill="#ff0513"/>
+                  </g>
+                </svg>                
+                <h5 class="capability-box__title">Web Design</h5>
+                <p class="capability-box__caption">Get awesome design services from inkyy.com</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="capability-box">
+                <svg class="capability-box__svg" width="106" height="106.185" viewBox="0 0 106 106.185">
+                  <g id="Group_66" data-name="Group 66" transform="translate(-321.317 -463.976)">
+                    <path id="Path_56" data-name="Path 56" d="M427.317,494.076l-53.005,30.275-52.995-30.275,52.995-30.1Zm0,0" transform="translate(0)" fill="#ffe01a"/>
+                    <path id="Path_57" data-name="Path 57" d="M374.312,498.748l-32.885-18.8-20.11,11.415,52.995,30.285,53.005-30.285L407.21,479.953Zm0,0" transform="translate(0 25.603)" fill="#ff6f00"/>
+                    <path id="Path_58" data-name="Path 58" d="M374.312,507.551l-32.885-18.8-20.11,11.417,52.995,30.285,53.005-30.285L407.21,488.753Zm0,0" transform="translate(0 39.705)" fill="#ff0513"/>
+                  </g>
+                </svg>                
+                <h5 class="capability-box__title">Web Design</h5>
+                <p class="capability-box__caption">Get awesome design services from inkyy.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="comment">
+        <div class="container">
+          <h3 class="comment__title">What My Client Says</h3>
+          <p class="comment__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et t enim ad minim veniam, quis nostrud exercitation.</p>
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="comment-left__cover">
+                <img class="comment-left__img" src="images/map-main" alt="map">
+                <img class="comment-left__img-man" src="images/client-1.jpg" alt="client-1">
+                <img class="comment-left__img-woman" src="images/client-2.jpg" alt="client-2">
+                <img class="comment-left__img-woman2 comment-left__img--active" src="images/client-3.jpg" alt="client-3">
+                <ul class="comment-left__list">
+                  <li class="comment-left__item">
+                    <a href="#" class="comment-left__link comment-left__link--active">Sarah</a>
+                  </li>
+                  <li class="comment-left__item">
+                    <a href="#" class="comment-left__link">Max</a>
+                  </li>
+                  <li class="comment-left__item">
+                    <a href="#" class="comment-left__link">Sophie</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="comment-right">
+                <p class="comment-right__caption">
+                  <span class="comment-right__comma-top">"</span>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt is the most explicabo.
+                </p>
+                <span class="comment-right__comma-bottom">"</span>
+                <span class="comment-right__introduce-name">- Sara Smith</span>
+                <span class="comment-right__introduce-caption">CEO ABC Company</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="register">
+        <div class="container">
+          <h3 class="register__title">Let’s Make Something Great Together</h3>
+          <p class="register__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et t enim ad minim veniam, quis nostrud exercitation.</p>
+          <form action="#" class="register-form">
+            <input class="register-form__input" type="text" name="" id="" placeholder="Name" required>
+            <input class="register-form__input" type="email" name="" id="" placeholder="Email" required>
+            <input class="register-form__input" type="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="11" name="" id="" placeholder="Phone#" required>
+            <input class="register-form__input" type="text" name="" id="" placeholder="Budget" required>
+            <textarea class="register-form__textarea" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <button class="register-form__btn btn" type="submit">Hire Me</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <span class="footer__logo portfolio-icon">Portfolio</span>
+        <ul class="footer-list">
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__link">About</a>
+          </li>
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__link footer-list__link-middle">Portfolio</a>
+          </li>
+          <li class="footer-list__item">
+            <a href="#" class="footer-list__link">Contact</a>
+          </li>
+        </ul>
+        <p class="footer__caption">NY / +1 123456 7890 / portfolio2024@gmail.com</p>
+        <div class="home-left__icons">
+          <svg class="footer__icon home-left__icon" width="56" height="35" viewBox="0 0 56 35">
+            <image id="behance" width="56" height="35" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAjCAYAAADBl8lGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAADu0lEQVRYw72ZTYhWZRTHf2dmnDEbK1ELs1CHiKkmyqIhog+DPmxhpeEiopAgWpRDi4gIoVxItIo2LZK+IFoIQZDU9GEYpZSEukioFjWWUyI5mQ5qjc6vxZ2hl+ne570zc+/7hxfue5/z/5/n3Oc8H+feUGX2GAWGgSPAfmAQ+DQixirQnhWiogDzcAh4AXgjIkr7UFcBq2fg7+uIeD9PsG68p54zjQCfnaGfV/P02moavUasA15vgZ9cdLTIz4PqttwU+j9OA3/OwMfJvJt1zsGp+CYibmyRr2kFuBw4XtA2F1gMXA7cCWwAOhNaPRHxc0sjLDF5z5+G1s3qWELrgZYGR8VzMCK+Uj8C1hSYXDSNh9UO3ALcDlwNLAXmAOPAH8APwC7gs4gYSQlVNoITei8ltJ4swe9Un1J/Kbk9nFbfUS/L06tjm0hlxdEmwfUC3wIvA5eW9NcFPAR8p27ME616BPcktHoTvH51pOSopbC5tgDVpxM6+xO8FeqRCoKbxMOT2mW2iVVkh+k8tAGLgKuA9UB/Qmdt3kavBrATuDXB/Z1sQRkBzgVuINuaijAK9EbEcCvOoqovJkbv/gTvlPq42pHDu1sdSnC3ThrWiaPqo03SekeCv64J9xJ1uID7t7qw7gA/VK9JdPBC9WwB9wNKQH0k4X9DK1J0TN2ituV0bn2Ct6ZkgN1me2Ee3mxFNdEBPAfMBwamtF2b4B1Se0r6OEj+otNXJsC3gH8S7V1AD3A9MC9ht1H9JCK2N9xblrDfWzK4FC6ubB+cSJXn1TMJrb1TONtrnh7HKjuqRcRoRGwGnkmYrVSvaPh/XlX+C9Bdx1n0NQqq6wk0Fr2j1Iv2yheZiBhVh4ArC0wa513RgxgG7quiP3Wtou2Jtq6G64MFNouBfRExPtuOVJ6iZoXq0oRJ46gdKLDpBFZW0Z86RvBeoDvRPtRwvSth9wSQPOYBqAvIDvp5+L7qcmm5+msTveVTOAcK7MbVtU38hfp2wtdAmQCXqQsKfkvUPnW1+or6VxOt3TmdfCxhf0bdpM7L4S1sEtxJdVEr34sC3BMRg1M6Oofs1NKX4J0AvuS/RWkFcBuQ+iSwKSK2tKoeVH03kWp96rEKfQ2aLXYt+fiiuk+d32Q+9auHK/C128Z1owXB7VQvKJO/6iJ12wz9jKtb1blTRevCYXXAyVSZBtQ71I8tLoYbcdassL4pT6uKReY4cIrsbfOPZG+cvwB2zPYLr7oEuAu4jqwkmxydE8BPZF+TP4+I34o0/gUNpl72OV15sgAAAABJRU5ErkJggg=="/>
+          </svg>
+          <svg class="footer__icon home-left__icon" width="40" height="40" viewBox="0 0 40 40">
+            <image id="dribbble" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAAEz0lEQVRYw8WZXYiWRRTH/7O7ta4a5mKrmWUYpERli1YL6lZEVEYXhQuVLd0EsdZNV0FQiReBpYiRC6ElLIi2XYR9GISSBn2Zra4pa3rRd7pautrabvv162LmzfPOPu8+z/Ou0YEX3nfOOf/5z5yZM2fmdSpDgEpJiyTdKWmBpOsl1UmqDSanJZ2UdFTSN5J2S/rMOTdcTn95iM0B1gLd5Jfu4DvnvyA2HdgIDKaQOAecBobHsBkMWNMvFrnHQ6el5GnguhD2go8DZgL3ACuBjgS/M0DzeIhVA29GoCPAp1HbJ5bcGHjzgbaE2X0LqM5LbiKwMwLaDzQE/cZI90IO7PqEGd0JTMwKUAlsjwDW2lECk4Aj0bpakINkFbAu6mN7lkgIaDVOQ8CKEna3B31BDuUJFXAFcCoi2ZrmtCxyaEmxXx3Zr8pIbgrwZfKeo6mUU100ojUZOqoGjhqffmBuis81wLfG5xjwmvl9CqhLcnzdGO0DLsk4G0ujGdiVYnvC2P4AzA7r/gvTviF2nBVGDz4NLMxCzvi/G5F8KGHWtkU2+4FZxuZms6b7rU7Aq8axPQ85Q+B8FLZLgWuB9WbwBdkGTE7AaTM26wqNDvjJKBbnJRhwno9IdFK8ywGOAw+PgXGLsT0JVApYZBq7yiBWAywBXsSfNEnSh8+lUzPg2Q3UWCXpbqPfkeI8Q9INkuZJulHSfPlyq1T++1PSG5LWO+d+yTjmnQFbku5ywHuSHgwN70s6ImmKpApJUyVNk6/1ZkvKdhxdkBOS5jjn+nJEZKmkD//lgz8BxiNDwNf4pH0f8FikfyrPiPAZpSBHHHBc0oyM/t2Sjkk6JOmgpMOSOp1zZ00HTlKnpJtC01FJ85xzZCToJA1KqpR02gF9kiZI6pe0UtJ5SQOSesPnd/ny/desocLXeW2maZ/8cqmNTM9JOivpN0k/h8EflvS2pMmSRhR2GEBPnlCUILY45LKecS6bggxXSeoJIb4MqHDOjZRB7DZJL6s4I8Tyh6TvQ3+98ju/RtKV8htwQoJPT7xJrs5J7HJ8eZZ0BzlF8R2mZQycSmAu0EzxkdgloN003J+D3CP4kyGWA8Cj+ErnI9O+OyPuvcanvUJSh9EvyQAwAdgkaauKd/93kpok1Tvntjrn/pa0xWIDMzNwvMN878h11AG1jC40e4BngKoE+0lAb5YwG58uY98ooILiYqGhhGMdvkSysgO4KqVDu4Q+SLFtMLa+WAiKNUbxToLjFOCg3f744sBlmJHlxu8vYFLGwayzCluwjgC3Gl1ltNiHgOVpxKJlMZC2EYGFXKiGigvWYLDBgHQQSn7guYjcsqzkDPYeg7E6QV8F7DU2rUkgoy5N+NzUZ9pWZGI0Gvslg/FVgv4Vo0++NAXDpmgT/Gi+b0llUppgo8EZBGqMriXqsykNrJXRcgaYNg6C1VEkCk8oT1J8LWjNApb09PExCXkuJ0mbP58NYbVXhGxPHwFsIrArIrkXqB8HQXvvHoiwd5H18SgKy+YIaBjYUg5RfN5Mks3kfX6LgJvDGozlALAKf7jPxCRt/FV2NvAA/s7dleB/BniibGIRyRn4x8yxnoAH8S+xY73GFuw24W+IF1f4Hx7RU8/SEkTL+Rvic+fcUN6+/gGvU+bwVlTRLwAAAABJRU5ErkJggg=="/>
+          </svg>
+          <svg class="footer__icon home-left__icon" width="40" height="40" viewBox="0 0 40 40">
+            <image id="insta" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAADq0lEQVRYw8WZT2zURRTHP6+BFiSNZUlI0C5IqECwAU4oNKKLiQY5YEICJ8LBgx7gBF405UgPhCMXveiJPwJhScReoEQEDgRJJCRCaYjQgCT86S4HbA9+PexsmA6/7c4su+077bx5b95n38z+5u37GTVEUhewHdgCvAt0A500R54Do8Aw8Atw3MzGojwldUjql1TS9EnJxeyoB5eXdHUawUK5JinvM5kH1w1cAhYH3OPAReAu8LRJW5wDlgIfAmHW7gF9ZjYabuu14NuUJX0jqVnnLmvHOl2MckYmO3zD/sDgrqTeVoFlgPa6mL70Vyff1OQfRFnS8hYDzZO0yU+CpOVBJkuSupC0MyD/bhqyNepi/SfpoDf3bcDyFZKOe4p/W3nmHEQx49fb6+Y6HUNVim3Aas//dzN73kDQdklrJH0q6WNJKyXNrmHenaHLA7jYFz39GoLz930i2HpJRySNZWRlzM2tD3wOBHbPJM335n/wd5TAeCASLCfppOLlpKScl+0BSTckDUl6P1h7wHdMBpTUI+lOAlxVhiUti1h/EuCsxC3NAb8CYaAhoAiMuPEyYCtQ8Gx6gEFJH5jZk5Sg0RmU9HNgPyqpMIV9QS8fKVUppmQwGlDShsD2noKLvYZfXtLfge+mWMC26FTD3mC8y8zu13NyNrsC9e7YoFGAqlzcmz3VkJkNxQYxswvAOU/1merVfimAwApgrjcuRvr5ctr7/AawspmAbwXjmw0A3qqz5msBzpjEAj4Ixu81EGtFnTVfC/AW8MIbb20A8Avv8wvgr6YBmtk4MOipCpI+iiVztp94qkG3ZnMAnRwKxj/FPqiBHwP14dig0YBmdgk44amWAFfqXXXAFeAdT33GzM4RKUnFAvA1sJbKxQ/wNnBeUrVYuOP0PbxaLODmv0wJmARoZk8kbQHOMrmiKWTAhDICfG5mj1NiJj8Hzew2sA44leB2ClhnZsOp8dqodA6qsiAS8qmZbQP6gKNAKcOs5Ob6zGybmcV2JXyG8VnAI162O5YmZvMycFlSO7AKWAhMuDVHzGwiNWMBwz9IOuGVXy3/2zmVqMbfzjOeTQcJtVoLZA+Tm0lnZ6T1USN7YeujrEoTtWbzqJGCoFG4rObRft+gVvttXyvPpDtz+/Rq++2PasUd28D8jUoD81mT2HJUrr+NxDQwPci8pOuaObletwBx270/I+2tlLKLOSfksSlAu4AdVF5DrAYWAe1N2uIJ4CHwJ5XXEMdqvYb4H0bZKaBuZ/DdAAAAAElFTkSuQmCC"/>
+          </svg>
+          <svg class="footer__icon home-left__icon" width="42" height="40" viewBox="0 0 42 40">
+            <image id="linked_in" data-name="linked in" width="42" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAoCAYAAACIC2hQAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAABw0lEQVRYw+2YPWsVURCGn7l6G40KKcSgFn40gYggggQDQexs/A02klZREDFCEDSVpf4JS0kRi4iFaGMRUEHUUozYmJD4SR6L68cleN1zXXdPxH3L2XfmPMw5zMACoLbUCfWBuqx+VJ+ok+oA60FqW52xtx6p23Jzop61WDdzc6LOJ4Auqe2cnC1gf4JvANieG/Rtgm8VWMwNOpPguxcRSzlBUYfUV795n8vqoayQXbB71dlfQD5UD+fmA4g1wDuBA9/izyLiRW7ARlUpypfoT+owcAzYR2c+rwALwDwwFxHveyVeSNhM18rmqePq/QL/onpdHVx7XqumLl4G5oDRAusW4AzwWD1aK6h6Dpiiv2e2A5hVj3wPbKyYcxQY+8PcTcAtdSQi3pXp6OcEzziwocQZu4CLUO7qV0rk9qMJdXPVV9+t58Bt4DWdTp0EdifkbQVO1AEqcAmYjojVH0E9D9wATiXUOF7HeJqOiKvdkAAR8QE4DTxNqHGwatA3wJVeHyPiC52uFmlP1aB3eq7En7qbUGewatCFBM/LBE+7atBPRYaISBpztez6v6EGdD2B1vo/6r/oaAPagDagDWgD+g+BfgUQb5qP6hHGCwAAAABJRU5ErkJggg=="/>
+          </svg>
+          <svg class="footer__icon home-left__icon" width="40" height="40" viewBox="0 0 40 40">
+            <image id="pinterest" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAAE6klEQVRYw7WZW4jXRRTHv/NTy2ztv94eZG3VyNwuBrXLaqBm+lCBCFIq5Uv1UBFdXnqwh16CNMmC1iyrtwgiumFXpPDSxTQXkS0sta3clM3AVVzFtd389PCbf549zv8qHfjDmTnnfM+ZM/ObOTP/oDoIyCS1SVooqVXSNZKmSLo8qpyWdFjSQUmdkrZK2h1COFePv1oCawKeBQ5ROx2Ktk3/R2ATgfXAQB2BeRqIWBOr8R2qCO5uSRslTUiIf5a0TdIPkn6T1B/7x0qaLmmWpFslXZuwPSbp4RDCe/VmbQTQkcjACeA5oKUGrJZocyKBtx4YWWtwlwGbHNAg8AJQqGvEOW4BWBexLH0MjKklcz64X4G2egNL+GgDup2PTcAIrxsSxi9Jetx0fSNpSQjheAlnjZLmSGqSNDl2H4m/nSGEkyXsxkn6SNJc090RQnii3MiWuVHtSKUeCMBSYDMwVOaL/Rv4DFgMpJIxBvjW2SwrFdwE4C+j2J1ab3HBf1fH9rIDmJ7AK7jpPgZMSgX4svsgWhM6K4D+hPNBoCtm9IvIDyb0jgNLEritTv9Vr9Acp6NI6xIgK4FzzuGuuCwaSmTmHmCPsxkC7kror3NLo9kKV7tRFpxxG3DW6JwGHlAVRL5eHwXOOPsWp1cA+ozO6qIgA3qMYI0zzIC9DnxONcE5nIVukJsTOjZRPUAmoN1NgR/ZcidfWWtwBut+h3WHk7c4ebuAVabjpwTo50a+rYTjBmAWia0kobvL4L2fkO8z8lWZ8nquSNud8ihJt5mu9QnARkn7JHVJeqOKRNovdFFiUF8ZvjWTZKe0yynPkHSpaW9NOFws6crI31lFgBajIGmqk9sYWjKdP54kqccpjzf8QAihL+FwgeH3VBHgEddudG0bw+RMee1WpBNO+YzhR8cp97SoRHZK0XjXHnJtG8PYrALYYde+3jaAaZKmma4tVQQ4w7UPlVPOlF9wijRsgw4hHJXUbbr8CWA/oGO6cA2naKnhfwwh9Dt5o+H7Mw1fE1MTgB8Y/hGG3yUWGn57pVsbMFnSgyWwi9Rs+N5M0gHTMSth8IqkwciPl/SUkS0wfNnpBS6R9JbOr/mTGr7lFOlGw+/PJO02HfO8dgjhd0kdpqshOpyp/C5cpG1lgmuQ9LbL+DMhhD8T6vMN3yngFne8zEyNnvxOuzFOk4CHjE1vmeAWAfudj62pHSFx1M0uFgN/lCoWyjh+x9h0AbcDN8WzfUk8+Lu4kHZR4uKVLBaiYK0RHAeuqBBcAI5SO70GjC6BWSBVbkXhFIaXQmsrBHhDjYHtxVUuCcznjf7wgjUqbDAKZ0mU/Eb3MZfx3cCp2B4CeoHvgReBuapAXFjyb0wpTXIp3l9mrXxo9N40/aP+WzdVUpzaXwxe+tIUlVe4qfkSVw6Rf1R2IPfVEpDDGgN87Xwur2S0wRlc7eQ3O3mz6iBgXCK4jmoMRwCfRoNO3H4FPGkAuysCpn20AQdccMmnj1IAAZhJejP9xIC+XmNghfi11v94VMHBSOCkAb63Sru6n98qXnKco9mSdpqug8oflzol9Urqk/SP8vP6KuXFx3xJ1yXg+pQ/YL570ZkzAc7j4mmA/JmlqifgWgMMwNMMP7urpR5gDTU+otc0xSbQTFK78nqwXXkZ36S81kPSKeXXhQO6yL8h/gX2O1xLpH3w6gAAAABJRU5ErkJggg=="/>
+          </svg>
+        </div>
+      </div>
+      <span class="footer__copyright">Copyright © 2019 Graphics Studio | All rights reserved</span>
+    </footer>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+      const swiper = new Swiper ('.swiper', {
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints : {
+        460 : {
+          grid : {
+            fill : "row",
+            rows : 2,
+          },
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+        576:{
+          grid : {
+            fill : "row",
+            rows : 2,
+          },
+          slidesPerView: 2,
+        },
+        768 : {
+          grid : {
+            fill : "row",
+            rows : 2,
+          }
+        },
+        992 : {
+          grid : {
+            fill : "row",
+            rows : 2,
+          },
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
+      })
+    </script>
+  </body>
+</html>
